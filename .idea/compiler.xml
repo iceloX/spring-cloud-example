@@ -11,6 +11,7 @@
         <module name="springcloud_03_consul_client" />
         <module name="springcloud_05_orders" />
         <module name="springcloud_08_hystrix" />
+        <module name="springcloud_10_hystrix_dashboard" />
         <module name="springcloud_04_users" />
         <module name="springcloud_07_product" />
         <module name="springcloud_06_category" />
@@ -27,6 +28,7 @@
       <module name="springcloud_07_product" target="1.8" />
       <module name="springcloud_08_hystrix" target="1.8" />
       <module name="springcloud_09_openfeign_hystrix" target="1.8" />
+      <module name="springcloud_10_hystrix_dashboard" target="1.8" />
       <module name="springcloud_parent" target="1.8" />
     </bytecodeTargetLevel>
   </component>
@@ -41,6 +43,7 @@
       <module name="springcloud_07_product" options="-parameters" />
       <module name="springcloud_08_hystrix" options="-parameters" />
       <module name="springcloud_09_openfeign_hystrix" options="-parameters" />
+      <module name="springcloud_10_hystrix_dashboard" options="-parameters" />
       <module name="springcloud_parent" options="-parameters" />
     </option>
   </component>
