@@ -1,0 +1,25 @@
+server:
+  port: 9191
+
+
+spring:
+  application:
+    name: GATEWAY
+
+  cloud:
+    consul:
+      host: localhost
+      port: 8500
+
+
+    gateway:
+      routes:
+        - id: category_router # 代表路由对象的唯一标识
+          uri: lb://CATEGORY
+          predicates:  # 断言的意思 用来配置路由规则
+            - Path=/category/**
+
+        - id: product_router # 代表路由对象的唯一标识
+          uri: lb://PRODUCT  # 实现请求的负载均衡的处理
+          predicates: # 断言的意思 用来配置路由规则
+            - Path=/list/**
